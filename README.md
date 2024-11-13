@@ -7,7 +7,7 @@ JINHUYK-MD
 
 <p align="center">
   <a href="https://github.com/KangJinhuyk">
-    <img alt="Taka bot logo" height="200" src="https://i.imgur.com/xvYDAsD.jpeg">
+    <img alt="Jinhuyk bot logo" height="200" src="https://i.imgur.com/xvYDAsD.jpeg">
   </a>
 </p>
 
@@ -26,7 +26,7 @@ JINHUYK-MD
 
  GET SESSION ID HERE
  <br>
- <a href='https://jinhuyk-session.onrender.com' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Get session id-blue?style=for-the-badge&logo=opencv&logoColor=white'/></a> 
+ <a href='https://unknown-md-sessions-generator-1.onrender.com' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Get session id-blue?style=for-the-badge&logo=opencv&logoColor=white'/></a> 
 
 **DEPLOY ON HEROKU**
 
