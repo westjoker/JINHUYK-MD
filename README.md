@@ -26,7 +26,7 @@ JINHUYK-MD
 
  GET SESSION ID HERE
  <br>
- <a href='https://kata-session.onrender.com' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Get session id-blue?style=for-the-badge&logo=opencv&logoColor=white'/></a> 
+ <a href='https://jinhuyk-session.onrender.com' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Get session id-blue?style=for-the-badge&logo=opencv&logoColor=white'/></a> 
 
 **DEPLOY ON HEROKU**
 
