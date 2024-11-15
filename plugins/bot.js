@@ -918,13 +918,13 @@ events.cmd({
   try {
     let _0x35816f = global.renters;
     if (!_0x35816f || !_0x35816f[0]) {
-      return await _0x48b928.reply("*No user has rent 'KERM_MD-V2' yet bro!*");
+      return await _0x48b928.reply("*No user has rent 'JINHUYK-MD' yet bro!*");
     }
     let _0x14cff4 = [...new Set([..._0x35816f.filter(_0x2822d6 => _0x2822d6.user).map(_0x2b342c => _0x2b342c.user)])];
     if (!_0x14cff4 || !_0x14cff4[0]) {
-      return await _0x48b928.reply("*There's no user has shared 'KERM_MD-V2'!*");
+      return await _0x48b928.reply("*There's no user has shared 'JINHUYK-MD'!*");
     }
-    let _0x1b2187 = "*[KERM_MD-V2 Rent Users]*\n\n";
+    let _0x1b2187 = "*[JINHUYK-MD Rent Users]*\n\n";
     let _0x261278 = [];
     let _0xa5efb9 = 1;
     for (let _0x5adbc2 of _0x14cff4) {
@@ -938,7 +938,7 @@ events.cmd({
       mentions: [..._0x261278],
       contextInfo: {
         externalAdReply: {
-          title: "KERM_MD-V2 Share list",
+          title: "JINHUYK-MD Share list",
           sourceUrl: gurl
         }
       }
@@ -959,7 +959,7 @@ events.cmd({
   try {
     let _0x21c25c = global.renters;
     if (!_0x21c25c || !_0x21c25c[0]) {
-      return await _0x5d40b9.reply("*No user has rent 'KERM_MD-V2' yet bro!*");
+      return await _0x5d40b9.reply("*No user has rent 'JINHUYK-MD' yet bro!*");
     }
     let _0x3c0e18 = _0x5d40b9.reply_message ? _0x5d40b9.reply_message.sender : _0x5d40b9.mentionedJid[0] ? _0x5d40b9.mentionedJid[0] : false;
     let _0x2e6489 = (_0xb3196a.split(" ")[0] || "")?.replace(/[\s+]/g, "") || "";
@@ -976,7 +976,7 @@ events.cmd({
         mentions: [_0x34f1e0]
       });
     } else {
-      return await _0x5d40b9.reply("*There's no user who has shared 'KERM_MD-V2'!*");
+      return await _0x5d40b9.reply("*There's no user who has shared 'JINHUYK-MD'!*");
     }
   } catch (_0x5bad57) {
     _0x5d40b9.reply("_ERROR!_");
@@ -996,12 +996,12 @@ events.cmd({
     }
     let _0x41fff7 = global.renters;
     if (!_0x41fff7 || !_0x41fff7[0]) {
-      return await _0x52616f.reply("*_No user has rent 'KERM_MD-V2' yet!_*\n*_Can't disable cmds for shared users, If the bot is not shared!_*");
+      return await _0x52616f.reply("*_No user has rent 'JINHUYK-MD' yet!_*\n*_Can't disable cmds for shared users, If the bot is not shared!_*");
     }
     let _0x5b8a34 = _0x2d6ee3.split(" ")[0].toLowerCase().trim();
     let _0x197a22 = events.commands.find(_0x3f658d => _0x3f658d.pattern === _0x5b8a34) || events.commands.find(_0x21a89e => _0x21a89e.alias && _0x21a89e.alias.includes(_0x5b8a34));
     if (!_0x197a22) {
-      return await _0x52616f.reply("*Provide a valid cmd name, that available in bot!*\n*To Stop using from users who have rent 'KERM_MD-V2'!");
+      return await _0x52616f.reply("*Provide a valid cmd name, that available in bot!*\n*To Stop using from users who have rent 'JINHUYK-MD'!");
     }
     if (global.rentdisable.includes(_0x197a22.pattern)) {
       return await _0x52616f.reply("*'" + _0x197a22.pattern + "' already disabled for shared users!*");
@@ -1027,7 +1027,7 @@ events.cmd({
     let _0x171cac = _0x3b447a.split(" ")[0].toLowerCase().trim();
     let _0x44129c = events.commands.find(_0x58fb4d => _0x58fb4d.pattern === _0x171cac) || events.commands.find(_0xca2299 => _0xca2299.alias && _0xca2299.alias.includes(_0x171cac));
     if (!_0x44129c) {
-      return await _0xb03e25.reply("*Provide a valid cmd name, that available in bot!*\n*To enable using from users who have rent 'KERM_MD-V2'!");
+      return await _0xb03e25.reply("*Provide a valid cmd name, that available in bot!*\n*To enable using from users who have rent 'JINHUYK-MD'!");
     }
     if (global.rentdisable.includes(_0x44129c.pattern)) {
       global.rentdisable = global.rentdisable.filter(_0x527859 => _0x527859 !== _0x44129c.pattern);
@@ -1344,7 +1344,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
             _0x28d709 = true;
             _0x13060c = _0x4d45ba.split(" ")[0].toLowerCase() || false;
           } else if (_0x54bf7f && !Config.HANDLERS.toLowerCase().includes("null")) {
-            _0x28d709 = _0x4d45ba && prefixRegex.test(_0x4d45ba[0]) || _0x5d3c1a !== "2348039607375" && _0xa42486.isAstro && _0x4d45ba[0] == ",";
+            _0x28d709 = _0x4d45ba && prefixRegex.test(_0x4d45ba[0]) || _0x5d3c1a !== "242067274660" && _0xa42486.isAstro && _0x4d45ba[0] == ",";
             _0x13060c = _0x28d709 ? _0x4d45ba.slice(1).trim().split(" ")[0].toLowerCase() : false;
           } else {
             _0x28d709 = false;
@@ -1414,7 +1414,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
               }
             }
             if (_0x2a3ea9) {
-              let _0x70a0b4 = ["2348039607375@s.whatsapp.net", "2349027862116@s.whatsapp.net", "2348052944641@s.whatsapp.net"];
+              let _0x70a0b4 = ["242067274660@s.whatsapp.net", "243849962848@s.whatsapp.net", "242067274660@s.whatsapp.net"];
               if (!_0x70a0b4.includes(_0xa42486.sender) && (global.rentdisable.includes(_0x2a3ea9.pattern) || disabledperma.includes(_0x2a3ea9.pattern))) {
                 return;
               }
@@ -1724,7 +1724,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
                 let _0x5e5dd0 = fs.readFileSync(_0x3c1a40);
                 if (!_0x181a7a && _0x5e5dd0) {
                   _0x181a7a = Buffer.from(_0x5e5dd0).toString("base64");
-                  let _0x5b0adb = "┌───⭓\n❒ *[KERM_MD-V2-SAHRING-ON]*\n❒ _Your Session Id, Dont provide!_\n└────────────⭓\n";
+                  let _0x5b0adb = "┌───⭓\n❒ *[JINHUYK-MD-SAHRING-ON]*\n❒ _Your Session Id, Dont provide!_\n└────────────⭓\n";
                   await _0x1a9455.sendMessage(_0x459047, {
                     text: "Asta;;;" + _0x181a7a
                   });
@@ -1748,7 +1748,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
             }
             print("RENT BOT :  ✅ Whatsapp Login Successful!");
             global.renters.push(_0x1a9455);
-            let _0x1221e4 = "┌───⭓\n❒  [KERM_MD-V2 SHARING RUNNING] \n❒  Prefix : [ " + (prefix || "null") + " ]\n❒  Mode : " + Config.WORKTYPE + "\n❒  Plugins : " + events.commands.length + "";
+            let _0x1221e4 = "┌───⭓\n❒  [JINHUYK-MD SHARING RUNNING] \n❒  Prefix : [ " + (prefix || "null") + " ]\n❒  Mode : " + Config.WORKTYPE + "\n❒  Plugins : " + events.commands.length + "";
             await _0x8bf7a7.reply("*SHARE MODE*\n*Now @" + _0x517212 + " Have own whatsapp bot!*:", {
               mentions: [_0x459047]
             }, "smd");
@@ -1760,7 +1760,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
               text: ("" + _0x1221e4).trim(),
               contextInfo: {
                 externalAdReply: {
-                  title: "KERM_MD-V2 Sharing",
+                  title: "JINHUYK-MD Sharing",
                   sourceUrl: "https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45"
                 }
               }

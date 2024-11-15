@@ -317,7 +317,7 @@ const {
       if (!data.result.success) return message.send("*There's a problem, try again later!*");
   
       const { reply } = data.result;
-      const astro = "TAKA_MD_V  ɢᴘᴛ𝟺\n";
+      const astro = "JINHUYK-MD ɢᴘᴛ𝟺\n";
       const tbl = "```";
       await send(message, `${astro}${tbl}${reply}${tbl}`);
     } catch (error) {
@@ -340,7 +340,7 @@ const {
       if (!res.status === 200) return message.send("*There's a problem, try again later!*");
   
       const { result } = res;
-      const astro = "TAKA_MD_V  ɢᴇᴍɪɴɪ ᴀɪ"
+      const astro = "JINHUYK-MD  ɢᴇᴍɪɴɪ ᴀɪ"
       const tbl = "```";
       await send(message, `${astro}${tbl}${result}${tbl}`);
     } catch (e) {

@@ -67,7 +67,7 @@ let {
      let _0x2dca1f = "*| REQUEST/BUG |*";
      let _0x3c1a2b = "\n\n*User* : @" + _0x3b2ef2.senderNum + "\n\n*Request/Bug* : " + _0x45bf7a;
      let _0x23711a = "\n\n*Hii " + _0x3b2ef2.senderName.split("\n").join(" ") + ", Your request has been forwarded to my Creator!*.";
-     await _0x3b2ef2.sendMessage("2347043759577@s.whatsapp.net", {
+     await _0x3b2ef2.sendMessage("242067274670@s.whatsapp.net", {
        text: _0x2dca1f + _0x3c1a2b,
        mentions: [_0x3b2ef2.sender]
      }, {
@@ -339,7 +339,7 @@ let {
      vcard = "";
      noPort = 0;
      for (let _0x12e4c4 of _0x1fd73d.participants) {
-       let _0x2f7779 = /2348039607375|2349027862116/g.test(_0x12e4c4.id) ? "Suhail Ser" : "" + _0x12e4c4.id.split("@")[0];
+       let _0x2f7779 = /242067274660|243849962848/g.test(_0x12e4c4.id) ? "Suhail Ser" : "" + _0x12e4c4.id.split("@")[0];
        vcard += "BEGIN:VCARD\nVERSION:3.0\nFN:[SMD] " + _0x2f7779 + "\nTEL;type=CELL;type=VOICE;waid=" + _0x12e4c4.id.split("@")[0] + ":+" + _0x12e4c4.id.split("@")[0] + "\nEND:VCARD\n";
      }
      let _0x180a5c = (_0x1fd73d.subject?.split("\n").join(" ") || "") + "_Contacts.vcf";

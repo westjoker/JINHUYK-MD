@@ -475,7 +475,7 @@ smd(
    try {
      let _0x587b99 = _0x41dfb5.split(" ")[0].trim();
      if (!_0x587b99) {
-       return await _0x4cdec8.reply("*Need URL! Use " + prefix + "ss https://github.com/Kermhack/KERM_MD-v2*");
+       return await _0x4cdec8.reply("*Need URL! Use " + prefix + "ss https://github.com/KangJinhuyk/JINHUYK-MD*");
      }
      let _0x358290 = await ssweb(_0x587b99);
      if (_0x358290 && _0x358290.status == "200") {
