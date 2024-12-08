@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/KangJinhuyk">
-    <img alt="Jinhuyk bot logo" height="200" src="https://files.catbox.moe/59iafh.jpg">
+    <img alt="Jinhuyk bot logo" height="400" src="https://files.catbox.moe/59iafh.jpg">
   </a>
 </p>
 
