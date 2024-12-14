@@ -606,39 +606,51 @@ smd(
   }
 );
 let pmtypes = ["videoMessage", "imageMessage"];
-cmd(
-  {
-    pattern: "url",
-    alias: ["createurl"],
-    category: "user",
-    filename: __filename,
-    desc: "image to url.",
-    use: "<video | image>",
-  },
-  async (_0x4e4351) => {
-    try {
-      let _0x680da4 = pmtypes.includes(_0x4e4351.mtype)
-        ? _0x4e4351
-        : _0x4e4351.reply_message;
-      if (!_0x680da4 || !pmtypes.includes(_0x680da4?.mtype)) {
-        return _0x4e4351.reply("*_Uhh Dear, Reply To An Image/Video!_*");
-      }
-      let _0x349452 = await _0x4e4351.bot.downloadAndSaveMediaMessage(
-        _0x680da4
-      );
-      let _0x536aa6 = await createUrl(_0x349452);
-      if (!_0x536aa6) {
-        return _0x4e4351.reply("*_Failed To Create Url!_*");
-      }
-      try {
-        fs.unlink(_0x349452);
-      } catch {}
-      await _0x4e4351.send(util.format(_0x536aa6), {}, "David", _0x680da4);
-    } catch (_0x2ee8cc) {
-      await _0x4e4351.error(_0x2ee8cc + "\n\ncommand url", _0x2ee8cc);
+cmd({
+  pattern: "url",
+  alias: ["createurl"],
+  category: "user",
+  filename: __filename,
+  desc: "Convert image/video to URL.",
+  use: "<video | image>",
+}, async (message) => {
+  try {
+    // Vérifier si le message contient un média ou si une réponse à un média est disponible
+    let media = pmtypes.includes(message.mtype)
+      ? message
+      : message.reply_message;
+
+    if (!media || !pmtypes.includes(media?.mtype)) {
+      return message.reply("*_Uhh Dear, Reply To An Image/Video!_*");
     }
+
+    // Télécharger et sauvegarder le média localement
+    let mediaPath = await message.bot.downloadAndSaveMediaMessage(media);
+    if (!mediaPath) {
+      return message.reply("*_Failed to download media!_*");
+    }
+
+    // Créer l'URL à partir du média téléchargé
+    let mediaUrl = await createUrl(mediaPath);
+    if (!mediaUrl) {
+      return message.reply("*_Failed to create URL!_*");
+    }
+
+    // Supprimer le fichier local après utilisation
+    try {
+      fs.unlinkSync(mediaPath);
+    } catch (error) {
+      console.warn("Failed to delete file:", error);
+    }
+
+    // Envoyer l'URL générée
+    await message.send(util.format(mediaUrl), {}, "David", media);
+  } catch (error) {
+    console.error("Error in 'url' command:", error);
+    await message.reply("*_An error occurred while processing your request!_*");
   }
-);
+});
+
 cmd(
   {
     pattern: "upload",
